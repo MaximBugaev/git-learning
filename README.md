@@ -69,4 +69,22 @@ git log --oneline #сокращённый лог
 
 HEAD - указывает на коммит, который был сделан последним
 
-**TIP! можно написать HEAD вместо хеша и тогда git поймёт его как последний коммит
+**TIP! можно написать HEAD вместо хеша и тогда git поймёт его как последний коммит**
+
+## Статусы файлов git
+
+1. Untracked - неостслеживаемые файлы
+2. Staged - подготовленные к коммиту файлы(в staged area)
+3. Tracked - файлы, зафиксированные git commit или добавленные в staging area
+4. Modified - отличающиеся от закоммиченой версии файлы
+
+**STAGING AREA = INDEX = CACHE**
+**STAGED = INDEXED = CACHED**
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "git commit" --> tracked/comitted;
+  tracked/comitted -- "Изменения" --> modified;
+  moified -- "git add" --> staged;
+``` 
