@@ -112,3 +112,11 @@ git --amend --no-edit #без изменений сообщения
 git commit --amend -m "message"
 git log --oneline
 ```
+
+## Откат назад 
+
+git restore --staged <file> - откатить файл из staging area
+
+git reset --hard <hash> - откатить коммит до <hash>
+
+git restore <file> - откатить файл из modified до последнего коммита
