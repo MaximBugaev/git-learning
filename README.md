@@ -79,6 +79,7 @@ HEAD - указывает на коммит, который был сделан 
 4. Modified - отличающиеся от закоммиченой версии файлы
 
 **STAGING AREA = INDEX = CACHE**
+
 **STAGED = INDEXED = CACHED**
 
 ```mermaid
