@@ -95,7 +95,6 @@ graph LR;
 1. Сообщение легко читается
 2. Оно информативное
 3. **Все сообщения оформлены в 1 стиле**
-<<<<<<< HEAD
 
 ## Как исправить коммит
 
@@ -117,10 +116,8 @@ git log --oneline
 
 ## Откат назад 
 
-git restore --staged <file> - откатить файл из staging area
+git restore --staged file - откатить файл из staging area
 
-git reset --hard <hash> - откатить коммит до <hash>
+git reset --hard hash - откатить коммит до hash
 
-git restore <file> - откатить файл из modified до последнего коммита
-=======
->>>>>>> 7c9fae42ae4e068d75ac73a351305f2e8dec6a34
+git restore file - откатить файл из modified до последнего коммита
